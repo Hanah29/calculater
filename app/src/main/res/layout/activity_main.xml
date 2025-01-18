@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/yellow"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="My Calculator App" />
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@color/blueblack"
+    tools:ignore="ExtraText">
+
+    <!-- Arithmetic Section -->
+    <TableRow>
+        <TextView
+            android:id="@+id/myTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arithmetic"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+    </TableRow>
+    <TableRow>
+
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_first_number"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="4dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="DuplicateIds" />
+
+        <EditText
+            android:id="@+id/input2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:hint="@string/enter_second_number"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textColorHint="@color/white"/>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/add_button" />
+
+        <Button
+            android:id="@+id/subtractButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/subtract_button" />
+    </TableRow>
+    <TableRow>
+        <!-- Add other arithmetic buttons -->
+        <Button
+            android:id="@+id/multiplyButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/multiply_button" />
+
+        <Button
+            android:id="@+id/divideButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/divide_button" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/modulusButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/modulus_button" />
+    </TableRow>
+    <!-- Result -->
+    <TableRow>
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/result"
+            android:textSize="30sp"
+            android:textColor="@color/yellow"
+            tools:ignore="DuplicateIds"
+            />
+    </TableRow>
+    <!-- Trigonometric Section -->
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trigonometric"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+    </TableRow>
+    <TableRow>
+
+        <EditText
+            android:id="@+id/trigInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:hint="@string/enter_angle"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="DuplicateIds" />
+    </TableRow>
+    <Switch
+        android:id="@+id/modeSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/degrees_mode"
+        android:textColor="@color/white"
+        tools:ignore="DuplicateIds" />
+    <TableRow>
+        <Button
+            android:id="@+id/sinButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/sine" />
+
+        <Button
+            android:id="@+id/tanButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/tan" />
+
+        <Button
+            android:id="@+id/cosButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/cos" />
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:id="@+id/secButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/sec" />
+
+        <Button
+            android:id="@+id/cotButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/cot" />
+
+        <Button
+            android:id="@+id/cosecButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/cosec" />
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:id="@+id/arcsecButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/arcsec" />
+
+        <Button
+            android:id="@+id/asinButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/arcsine" />
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:id="@+id/arccscButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/arccsc" />
+
+        <Button
+            android:id="@+id/acosButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/arccos" />
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:id="@+id/atanButton"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/arctan" />
+
+        <Button
+            android:id="@+id/arccotButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/arccot" />
+    </TableRow>
+    <TableRow>
+
+    </TableRow>
+</TableLayout>
+</LinearLayout>

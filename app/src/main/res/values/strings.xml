@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">calculator</string>
+    <string name="my_text_view_content">This is the text for my TextView</string>
+    <string name="arithmetic">Arithmetic</string>
+    <string name="enter_first_number">Enter first number</string>
+    <string name="enter_second_number">Enter second number</string>
+    <string name="add_button">+</string>
+    <string name="subtract_button">-</string>
+    <string name="multiply_button">*</string>
+    <string name="divide_button">/</string>
+    <string name="modulus_button">%</string>
+    <string name="result">Result</string>
+    <string name="trigonometric">Trigonometric</string>
+    <string name="enter_angle">Enter angle</string>
+    <string name="degrees_mode">Degrees Mode</string>
+    <string name="sine">Sine</string>
+    <string name="cosec">cosec</string>
+    <string name="cos">cos</string>
+    <string name="sec">sec</string>
+    <string name="tan">tan</string>
+    <string name="cot">cot</string>
+    <string name="arcsine">arcsine</string>
+    <string name="arccsc">arccsc</string>
+    <string name="arccos">arccos</string>
+    <string name="arcsec">arcsec</string>
+    <string name="arctan">arctan</string>
+    <string name="arccot">arccot</string>
+</resources>
